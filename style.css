@@ -1,159 +1,121 @@
-/* Styles généraux */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+
+/* Reset de base */
+* {
   margin: 0;
   padding: 0;
-  background-color: #fefefe;
-  color: #333;
+  box-sizing: border-box;
 }
 
+/* Global */
+body {
+  background-color: #f4f1ee; /* fond doux */
+  color: #3e2f1c; /* brun foncé pour le texte */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
 header {
-  background-color: #333;
+  background-color: #5c4033; /* brun profond */
   color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-section {
   padding: 40px 20px;
-  max-width: 900px;
-  margin: 30px auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-footer {
-  text-align: center;
-  background-color: #eee;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-/* À propos */
-#about {
-  background-color: #fef9f5;
   text-align: center;
 }
 
-#about h2 {
-  color: #2c3e50;
+header h1 {
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section générale */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fffaf5; /* ton crème */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Section À propos */
+#about h2, #menu h2, #contact h2 {
+  color: #5c4033;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
 #about p {
-  color: #555;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #4b3621;
 }
 
-/* Menu */
-#menu {
-  background-color: #fff8ed;
-}
-
+/* Section Menu */
 #menu ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
 }
 
 #menu li {
-  padding: 10px 0;
-  border-bottom: 1px solid #e0d9ce;
-  font-size: 18px;
+  background-color: #e6d3c0;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-left: 6px solid #5c4033;
+  font-size: 1.1rem;
 }
 
-/* Contact */
-#contact {
-  background-color: #f5f5f5;
-}
-
-#contact h2 {
-  text-align: center;
-  color: #2c3e50;
-}
-
+/* Section Contact */
 #contact form {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 0 10px;
 }
 
 #contact label {
   margin-top: 15px;
   font-weight: bold;
-  color: #333;
+  color: #3e2f1c;
 }
 
 #contact input,
 #contact textarea {
   padding: 10px;
+  border: 1px solid #d9c7b4;
+  border-radius: 6px;
+  font-size: 1rem;
   margin-top: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-  width: 100%;
 }
 
 #contact button {
   margin-top: 20px;
   padding: 12px;
-  background-color: #e67e22;
+  background-color: #a97458;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 #contact button:hover {
-  background-color: #cf711f;
+  background-color: #8d5e42;
 }
 
-/* Boutons généraux */
-button {
-  background-color: #e63946;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background-color: #d62828;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  section {
-    padding: 20px;
-  }
-
-  form {
-    padding: 0 10px;
-  }
+/* Footer */
+footer {
+  background-color: #d9c7b4;
+  color: #3e2f1c;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
